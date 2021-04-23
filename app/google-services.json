@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "700565246846",
+    "firebase_url": "https://cricket-fantasy-e13dd-default-rtdb.firebaseio.com",
+    "project_id": "cricket-fantasy-e13dd",
+    "storage_bucket": "cricket-fantasy-e13dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700565246846:android:6520bd0bf4712ef456592f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700565246846-1cdisdkqots1o4f3rdka2n1303hd7uaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlUY74BjGP39ES38gXClQQugYL5XDIH8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700565246846-1cdisdkqots1o4f3rdka2n1303hd7uaf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
