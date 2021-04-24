@@ -1,43 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Venue: "
-    android:layout_alignParentLeft="true"
-    android:layout_margin="5dp"
-    android:id="@+id/venue"
-    ></TextView>
-    <TextView
-        android:layout_width="wrap_content"
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="vs"
-        android:layout_margin="5dp"
-        android:layout_centerInParent="true"
-        android:id="@+id/vs"
-        android:layout_below="@id/venue"
-        ></TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/vs"
-        android:layout_margin="5dp"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/date"></TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/vs"
-        android:layout_margin="5dp"
-        android:layout_centerInParent="true"
-        android:id="@+id/type"></TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/vs"
-        android:layout_margin="5dp"
-        android:layout_alignParentRight="true"
-        android:id="@+id/time"></TextView>
-</RelativeLayout>
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue: "
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:id="@+id/venue"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vs"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/vs"
+            android:layout_below="@id/venue"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vs"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/date"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vs"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/type"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vs"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/time"></TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

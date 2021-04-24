@@ -7,15 +7,15 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class TeamSelection extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.matchselection);
+        setContentView(R.layout.activity_teamselection);
         ViewPager viewPager = findViewById(R.id.view_pager);
         TabLayout tabs = findViewById(R.id.tabs);
-        tabs.addTab(tabs.newTab().setText("HEHIUDSHIHIUHIFHSUIH"));
+        tabs.addTab(tabs.newTab().setText("Team 1"));
         tabs.addTab(tabs.newTab().setText("Team 2"));
         tabs.setTabGravity(TabLayout.GRAVITY_FILL);
         tabs.setupWithViewPager(viewPager);
