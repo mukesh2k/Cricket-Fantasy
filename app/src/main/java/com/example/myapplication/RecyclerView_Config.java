@@ -55,7 +55,9 @@ public class RecyclerView_Config {
                 itemView.setOnClickListener( new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
                         Intent intent = new Intent( mContext, TeamSelection.class );
+                        intent.putExtra("key",key);
                         intent.setFlags( FLAG_ACTIVITY_NEW_TASK);
                         mContext.startActivity( intent );
 

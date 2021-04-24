@@ -64,7 +64,7 @@ public class FirebaseMatchHelper {
                 for (DataSnapshot keyNode : dataSnapshot.getChildren())
                 {
 
-                    key.add(keyNode.getKey());
+
                     String patient = (String) keyNode.getValue();
                     Url.add( patient );
                     req.add(patient);
@@ -77,6 +77,7 @@ public class FirebaseMatchHelper {
                                 public void onResponse(String response) {
                                     // Display the first 500 characters of the response string.
                                     Object obj = null;
+                                    key.add( (String) keyNode.getValue());
                                     try {
                                         // System.out.println(response);
                                         obj = new JSONParser().parse(response);
@@ -103,8 +104,8 @@ public class FirebaseMatchHelper {
                                         // Toast.makeText(cont, comp, Toast.LENGTH_SHORT).show();
                                         MatchArray m=null;
                                         if(s.length<2)
-                                            m = new MatchArray( keyNode.getValue().toString(), city, comp, s[1], s[2], s[0].split("T")[0], s[0].split("T")[1].substring(0, 5));
-                                        else  m = new MatchArray( keyNode.getValue().toString(), city, comp, s[1], s[2], s[0].split("T")[0], "00:00");
+                                            m = new MatchArray( response, city, comp, s[1], s[2], s[0].split("T")[0], s[0].split("T")[1].substring(0, 5));
+                                        else  m = new MatchArray(response, city, comp, s[1], s[2], s[0].split("T")[0], "00:00");
                                         System.out.println(o[0]++);
                                         matches.add(m);
                                         new RecyclerView_Config().setConfig( recyclerView, cont, FirebaseMatchHelper.matches, FirebaseMatchHelper.key);

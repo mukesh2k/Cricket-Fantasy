@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="Team1">
+    tools:context="Team2">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcview"
+        android:id="@+id/rcview1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/cardteam"/>

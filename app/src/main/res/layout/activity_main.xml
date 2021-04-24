@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_header_selector"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRICKET FANTASY"
+        android:textSize="40dp"
+        android:id="@+id/txt"
+        android:layout_margin="50dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"></TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emai"
+        android:layout_below="@id/txt"
+        android:layout_margin="10dp"
+        android:text="Email/Password"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/face"
+        android:layout_below="@id/emai"
+        android:layout_margin="10dp"
+        android:text="FaceBook">
+    </Button>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/phone"
+        android:layout_below="@id/face"
+        android:layout_height="wrap_content"
+        android:text="Phone Signin"></Button>
+</RelativeLayout>

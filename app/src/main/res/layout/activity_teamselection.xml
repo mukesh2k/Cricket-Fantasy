@@ -4,22 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context= ".TeamSelection">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.MyApplication.AppBarOverlay">
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        android:theme="@style/Theme.MyApplication.AppBarOverlay">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="?actionBarSize"
+        android:padding="@dimen/appbar_padding"
+        android:text="Select Your Players"
+        android:layout_margin="5dp"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/next"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:textColorHighlight="@color/black"
+        ></Button>
+    </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,6 +44,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
 
+                android:focusedByDefault="true"
                 android:id="@+id/grp">
             <RadioButton
                 android:layout_width="wrap_content"
@@ -70,6 +86,7 @@
                 android:layout_margin="10sp"
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/grp"></TextView>
+
         </RelativeLayout>
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
