@@ -32,6 +32,7 @@ public class MatchArrayDev extends AppCompatActivity {
     static public ArrayList<MatchArray> matches=new ArrayList<MatchArray>();
     public static ArrayList<String> req=new ArrayList<String>();
     RecyclerView recyclerView;
+    static int y=0;
     public static ArrayList<String> key=new ArrayList<String>();
 
     @Override
@@ -39,12 +40,13 @@ public class MatchArrayDev extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.matchselection);
 
-        recyclerView =  findViewById(R.id.recyclerViewRDV);
+            recyclerView = findViewById(R.id.recyclerViewRDV);
 
-        new FirebaseMatchHelper(getApplicationContext(),recyclerView).readMatches(new FirebaseMatchHelper.DataStatus() {
-            @Override
-            public void DataIsLoaded(ArrayList<String> Url, List<String> keys) {
-            }});
+            new FirebaseMatchHelper(getApplicationContext(), recyclerView).readMatches(new FirebaseMatchHelper.DataStatus() {
+                @Override
+                public void DataIsLoaded(ArrayList<String> Url, List<String> keys) {
+                }
+            });
 
 
 
