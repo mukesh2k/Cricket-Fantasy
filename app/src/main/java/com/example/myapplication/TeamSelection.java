@@ -42,11 +42,13 @@ public class TeamSelection extends AppCompatActivity {
    public static RelativeLayout rl;
     public static double cur=0.0;
     public static Context con;
+    public static String ui;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teamselection);
         String url = getIntent().getStringExtra("key");
+        ui=url;
         ViewPager viewPager = findViewById(R.id.view_pager);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.addTab(tabs.newTab().setText("Team 1"));

@@ -1,7 +1,30 @@
 package com.example.myapplication;
 
 public class SelectedPlayer {
-    String name,team,role,value,scored;
+    String name;
+    String team;
+    String role;
+    String value;
+    String scored;
+    int run;
+
+    public int getRun() {
+        return run;
+    }
+
+    public void setRun(int run) {
+        this.run = run;
+    }
+
+    public String getPly() {
+        return ply;
+    }
+
+    public void setPly(String ply) {
+        this.ply = ply;
+    }
+
+    String ply;
 
     public String getName() {
         return name;

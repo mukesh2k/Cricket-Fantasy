@@ -12,6 +12,8 @@ public class MyAdapter1 extends FragmentPagerAdapter {
 
     private Context myContext;
     int totalTabs;
+    PlayerScene t;
+    BallScene t1;
     public MyAdapter1(Context context, @NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
         myContext = context;
@@ -30,13 +32,14 @@ public class MyAdapter1 extends FragmentPagerAdapter {
         switch(position)
         {
             case 0:
-                PlayerScene t=new PlayerScene();
+                 t=new PlayerScene();
                 return t;
             case 1:
-               BallScene t1=new BallScene();
+                t1=new BallScene();
                 return t1;
             default:
                 return null;
         }
     }
+
 }
