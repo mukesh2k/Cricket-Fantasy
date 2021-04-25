@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,6 +31,8 @@ import org.json.simple.parser.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
 public class TeamSelection extends AppCompatActivity {
     ArrayList<String> T1 = new ArrayList<>();
     ArrayList<String> T2 = new ArrayList<>();
@@ -48,7 +51,6 @@ public class TeamSelection extends AppCompatActivity {
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.addTab(tabs.newTab().setText("Team 1"));
         tabs.addTab(tabs.newTab().setText("Team 2"));
-
         radioGroup= findViewById(R.id.grp);
         RadioButton rd=findViewById(R.id.teambutton);
         ty=findViewById(R.id.current);
@@ -69,6 +71,13 @@ public class TeamSelection extends AppCompatActivity {
                 {
                     System.out.println(Team1.t1.get(i).getName()+Team1.t1.get(i).getPoint()+Team1.t1.get(i).getTit());
                 }
+                for(int i=0;i<Team2.t2.size();i++)
+                {
+                    System.out.println(Team2.t2.get(i).getName()+Team2.t2.get(i).getPoint()+Team2.t2.get(i).getTit());
+                }
+                Intent intent = new Intent( getApplicationContext(), Gamee.class );
+                intent.setFlags( FLAG_ACTIVITY_NEW_TASK);
+                getApplicationContext().startActivity( intent );
             }
         });
         RequestQueue queue = Volley.newRequestQueue(getApplicationContext());

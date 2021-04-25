@@ -55,7 +55,9 @@ public class RecyclerView_Config {
                 itemView.setOnClickListener( new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
+                        String[] a=vs.getText().toString().split("VS");
+                        Team1.tm=a[0];
+                        Team2.tm=a[1];
                         Intent intent = new Intent( mContext, TeamSelection.class );
                         intent.putExtra("key",key);
                         intent.setFlags( FLAG_ACTIVITY_NEW_TASK);

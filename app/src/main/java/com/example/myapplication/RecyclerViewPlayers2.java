@@ -67,6 +67,7 @@ public class RecyclerViewPlayers2 {
                                     }
                                     role.setText("Player");
                                     TeamSelection.cur+=Double.parseDouble(pts.getText().toString());
+                                    Team2.t2.get(key-1).setTit("Player");
                                     break;
 
                                 }
@@ -86,6 +87,7 @@ public class RecyclerViewPlayers2 {
 
                                         TeamSelection.cur+=Double.parseDouble(pts.getText().toString());
                                         role.setText("Vice Captain");
+                                        Team2.t2.get(key-1).setTit("Vice Captain");
                                         break;
 
                                     }
@@ -104,6 +106,7 @@ public class RecyclerViewPlayers2 {
                                         TeamSelection.cur+=Double.parseDouble(pts.getText().toString());
                                         TeamSelection.c=true;
                                         role.setText("Captain");
+                                        Team2.t2.get(key-1).setTit("Captain");
                                         break;
 
                                     }
@@ -140,6 +143,7 @@ public class RecyclerViewPlayers2 {
                             role.setTextColor(Color.BLACK);
                             pts.setTextColor(Color.BLACK);
                             name.setTextColor(Color.BLACK);
+                            Team2.t2.get(key-1).setTit("none");
                         }
 
                         TeamSelection.ty.setText("Points:"+String.valueOf(TeamSelection.cur));

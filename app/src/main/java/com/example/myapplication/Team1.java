@@ -25,6 +25,7 @@ import static com.example.myapplication.TeamSelection.rl;
 public class Team1 extends Fragment {
     public static ArrayList<team> t1 = new ArrayList<>();
     public static ArrayList<team> t2 = new ArrayList<>();
+    public static String tm;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

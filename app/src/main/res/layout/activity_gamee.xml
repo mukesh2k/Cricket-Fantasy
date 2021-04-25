@@ -4,89 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context= ".TeamSelection">
+    tools:context= ".Gamee">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.MyApplication.AppBarOverlay">
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="@dimen/appbar_padding"
-        android:text="Select Your Players"
-        android:layout_margin="5dp"
-        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        android:id="@+id/next"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="5dp"
-        android:textColorHighlight="@color/black"
-        ></Button>
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:padding="@dimen/appbar_padding"
+                android:text="Cricket Fantasy"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ball to ball"
+                android:id="@+id/balact"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:textColorHighlight="@color/black"
+                ></Button>
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/lay">
-            <RadioGroup
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:text="Team 1 vs Team 2"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:id="@+id/tm"></TextView>
 
-                android:focusedByDefault="true"
-                android:id="@+id/grp">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Player"
-                android:layout_margin="5dp"
-                android:id="@+id/teambutton">
-            </RadioButton>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vice Captain"
-                android:layout_margin="5dp"
-                android:id="@+id/vicecaptain"
-               >
-            </RadioButton>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Captain"
-                android:layout_margin="5dp"
-                android:id="@+id/captainbutton"
-              ></RadioButton>
-            </RadioGroup>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="cure"
-                android:id="@+id/current"
+                android:text="batting"
+                android:id="@+id/batt"
                 android:textSize="20dp"
                 android:layout_margin="10sp"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@id/grp"></TextView>
+                android:layout_below="@id/tm"></TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Max Points:100"
+                android:text="Live\n points:100"
+                android:textAlignment="center"
+                android:id="@+id/live"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10sp"
+                android:layout_below="@id/tm"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overs:0.0"
+                android:id="@+id/ov"
                 android:textSize="20dp"
                 android:layout_margin="10sp"
                 android:layout_alignParentRight="true"
-                android:layout_below="@id/grp"></TextView>
+                android:layout_below="@id/tm"></TextView>
+
+
 
         </RelativeLayout>
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
+            android:id="@+id/tab1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:tooltipText="heyy"
@@ -97,7 +90,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+        android:id="@+id/view_pager1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />

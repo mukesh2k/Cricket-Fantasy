@@ -5,7 +5,7 @@
     android:animateLayoutChanges="true"
     android:layout_margin="10dp"
     app:cardElevation="5dp"
-    app:cardCornerRadius="5dp">>
+    app:cardCornerRadius="5dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,39 +13,41 @@
         android:layout_margin="5dp">
 
         <TextView
-            android:id="@+id/over"
+            android:id="@+id/nme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_margin="5dp"
             android:layout_marginRight="20dp"
-            android:text="Over :"></TextView>
+            android:text="Name"></TextView>
 
         <TextView
-            android:id="@+id/play"
+            android:id="@+id/indpt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:layout_below="@id/nme"
             android:layout_marginEnd="0dp"
             android:textSize="16dp"
-            android:layout_centerHorizontal="true"
-            android:text="Player"></TextView>
+            android:text="Pointsr"></TextView>
 
         <TextView
-            android:id="@+id/inf"
+            android:id="@+id/tme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/over"
+            android:layout_below="@+id/indpt"
             android:layout_margin="5dp"
-            android:text="Info"></TextView>
+            android:text="Team"></TextView>
 
         <TextView
-            android:id="@+id/pt"
+            android:id="@+id/pttz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_margin="5dp"
+            android:textAlignment="center"
             android:text="+point"></TextView>
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
