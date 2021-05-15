@@ -153,20 +153,6 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog dialog = mBuilder.create();
 
                 dialog.show();
-//                mInsc.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//
-//                        AlertDialog.Builder mBuilder = new AlertDialog.Builder(com.example.myapplication.MainActivity.this);
-//                        View mView = getLayoutInflater().inflate(R.layout.newusersigin, null);
-//
-//                        mBuilder.setView(mView);
-//                        AlertDialog dialog = mBuilder.create();
-//
-//                        dialog.show();
-//                    }
-//                });
-
 
             }
 

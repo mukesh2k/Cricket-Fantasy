@@ -22,7 +22,11 @@ public class RecyclerViewSelectedPlayer {
         recyclerView.setLayoutManager(new GridLayoutManager(context,2));
         recyclerView.setAdapter(pointsAdapter);
     }
-
+    public void  fun()
+    {
+        pointsAdapter.notifyDataSetChanged();
+        return;
+    }
     class PatientItemView extends RecyclerView.ViewHolder {
 
         private TextView point;

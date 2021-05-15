@@ -19,7 +19,7 @@ import static com.example.myapplication.Gamee.kzy;
 public class PlayerScene extends Fragment {
 
    public static int y=0;
-
+     public RecyclerViewSelectedPlayer r;
     RecyclerView recyclerView;
     @Nullable
     @Override
@@ -27,7 +27,8 @@ public class PlayerScene extends Fragment {
 
         View rootView = inflater.inflate(R.layout.listplayers, container, false);
         RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.rve);
-        new RecyclerViewSelectedPlayer().setConfig( recyclerView, getContext(),S, kzy);
+        r= new RecyclerViewSelectedPlayer();
+        r.setConfig( recyclerView, getContext(),S, kzy);
         return rootView;
     }
 

@@ -20,8 +20,12 @@ public class RecyclerViewPoints {
         pointsAdapter = new PatientAdapter(tea, keys);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         recyclerView.setAdapter(pointsAdapter);
-    }
 
+    }
+    public void fun()
+    {
+        pointsAdapter.notifyDataSetChanged();
+    }
     class PatientItemView extends RecyclerView.ViewHolder {
 
         private TextView over;

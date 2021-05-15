@@ -42,18 +42,6 @@ public class MatchArrayDev extends AppCompatActivity {
 
             recyclerView = findViewById(R.id.recyclerViewRDV);
 
-            new FirebaseMatchHelper(getApplicationContext(), recyclerView).readMatches(new FirebaseMatchHelper.DataStatus() {
-                @Override
-                public void DataIsLoaded(ArrayList<String> Url, List<String> keys) {
-                }
-            });
-
-
-
+            new FirebaseMatchHelper(getApplicationContext(),recyclerView).readMatches();
     }
-
-
-
-
-
 }

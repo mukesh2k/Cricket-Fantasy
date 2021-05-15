@@ -226,6 +226,7 @@ public class TeamSelection extends AppCompatActivity {
                             new RecyclerViewPlayers().setConfig( recyclerView, getApplicationContext() ,t1, t22);
                             new RecyclerViewPlayers2().setConfig( recyclerView1,getApplicationContext() ,t2 ,t23);
                         }
+
                     }
 
                     } catch (ParseException e) {

@@ -29,6 +29,7 @@ public class RecyclerView_Config {
 
         }
 
+
         class PatientItemView extends RecyclerView.ViewHolder {
 
             private TextView venu;
@@ -50,7 +51,6 @@ public class RecyclerView_Config {
                 date = (TextView) itemView.findViewById( R.id.date);
                 type = (TextView) itemView.findViewById( R.id.type );
                 time = (TextView) itemView.findViewById( R.id.time );
-
 
                 itemView.setOnClickListener( new View.OnClickListener() {
                     @Override

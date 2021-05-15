@@ -53,14 +53,15 @@ public class FirebaseMatchHelper {
         return;
     }
 
-    public void readMatches( final DataStatus dataStatus){
-        databaseReference.addValueEventListener( new ValueEventListener() {
+    public void readMatches( ){
+        databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                 Url.clear();
                 final int[] o = {0};
-
+                matches.clear();
+                key.clear();
                 for (DataSnapshot keyNode : dataSnapshot.getChildren())
                 {
 

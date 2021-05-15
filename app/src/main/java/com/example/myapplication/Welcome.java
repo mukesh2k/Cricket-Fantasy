@@ -26,9 +26,11 @@ public class Welcome extends AppCompatActivity {
         game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseMatchHelper.matches.clear();
+                FirebaseMatchHelper.key.clear();
                 Intent i=new Intent(getApplicationContext(),MatchArrayDev.class);
                 i.setFlags(FLAG_ACTIVITY_NEW_TASK);
-                getApplicationContext().startActivity( i);
+                getApplicationContext().startActivity(i);
             }
         });
         rec.setOnClickListener(new View.OnClickListener() {

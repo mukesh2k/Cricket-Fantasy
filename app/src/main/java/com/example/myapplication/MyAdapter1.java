@@ -12,8 +12,8 @@ public class MyAdapter1 extends FragmentPagerAdapter {
 
     private Context myContext;
     int totalTabs;
-    PlayerScene t;
-    BallScene t1;
+    static PlayerScene t;
+    static BallScene t1;
     public MyAdapter1(Context context, @NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
         myContext = context;
